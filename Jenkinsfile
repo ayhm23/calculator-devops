@@ -16,6 +16,8 @@ pipeline {
     }
 
     triggers {
+        // webhook through ngrok; polling stays as a fallback when the tunnel is down
+        githubPush()
         pollSCM('H/2 * * * *')
     }
 
