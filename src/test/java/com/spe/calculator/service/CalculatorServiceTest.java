@@ -14,7 +14,7 @@ class CalculatorServiceTest {
 
     @Test
     void addPositiveNumbers() {
-        assertEquals(5, service.add(2, 3), DELTA);
+        assertEquals(6, service.add(2, 3), DELTA);
     }
 
     @Test
